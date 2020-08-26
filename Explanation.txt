@@ -1,0 +1,66 @@
+Given a 2D grid, each cell is either a wall ‘W’, an enemy ‘E’ or empty ‘0’ (the number zero), return the maximum enemies you can kill using one bomb.
+The bomb kills all the enemies in the same row and column from the planted point until it hits the wall since the wall is too strong to be destroyed.
+Note: You can only put the bomb at an empty cell.
+
+Input Description:
+First line contains N as integer.(1<n<100)
+rest line contains, NxN elements row by row.
+
+Output Description:
+Print the maximum enemies you can kill using one bomb.
+
+Sample Input:
+3
+0 E 0
+E 0 W
+0 W 0
+
+Sample Output:
+2
+
+Explanation:
+From the given grid if we place the bomb at (1,1) we can kill 2 enemies.
+
+Sample Input:
+3
+0 W E
+0 E W
+E E 0
+
+Sample Input:
+2
+
+Sample Input:
+4
+E E 0 0
+0 E E W
+E E W W
+W W 0 0
+
+Sample Output:
+4
+
+Sample INput:
+2
+W 0
+W E
+
+Sample Output:
+1
+
+Sample Input:
+2
+E E
+W W
+
+Sample Output:
+0
+
+Sample Input:
+3
+0 0 0
+W W E
+W W 0
+
+Sample Output:
+1
